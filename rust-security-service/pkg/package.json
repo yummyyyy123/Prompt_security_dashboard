@@ -1,0 +1,19 @@
+{
+  "name": "rust-security-service",
+  "type": "module",
+  "description": "Hardened Rust WASM Security Module for Next.js",
+  "version": "0.1.0",
+  "license": "MIT",
+  "files": [
+    "rust_security_service_bg.wasm",
+    "rust_security_service.js",
+    "rust_security_service_bg.js",
+    "rust_security_service.d.ts"
+  ],
+  "main": "rust_security_service.js",
+  "types": "rust_security_service.d.ts",
+  "sideEffects": [
+    "./rust_security_service.js",
+    "./snippets/*"
+  ]
+}

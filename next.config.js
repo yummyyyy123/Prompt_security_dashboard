@@ -14,9 +14,11 @@ const nextConfig = {
       '@': path.resolve(__dirname, 'src'),
     }
     
+    // Handle WASM files
+    config.experiments = { ...config.experiments, asyncWebAssembly: true }
+    
     return config
-  },
-  transpilePackages: ['rust-security-service']
+  }
 }
 
 module.exports = nextConfig
