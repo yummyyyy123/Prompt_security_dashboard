@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
-import { SecurityLogger, SecurityEventType } from '@/lib/security-logger'
+import { SecurityLogger, SecurityEventType } from '../lib/security-logger'
 import { NextRequest } from 'next/server'
 
 let supabase: any = null

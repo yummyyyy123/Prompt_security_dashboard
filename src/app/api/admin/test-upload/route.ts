@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { withAdminAuth } from '@/lib/admin-auth'
-import { SecurityLogger } from '@/lib/security-logger'
+import { withAdminAuth } from '../../../../lib/admin-auth'
+import { SecurityLogger } from '../../../../lib/security-logger'
 
 async function handler(request: NextRequest) {
     try {

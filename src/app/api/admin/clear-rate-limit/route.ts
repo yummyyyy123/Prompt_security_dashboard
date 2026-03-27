@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { withAdminAuth } from '@/lib/admin-auth'
+import { withAdminAuth } from '../../../../lib/admin-auth'
 
 async function handler(request: NextRequest) {
     try {

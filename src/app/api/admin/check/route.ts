@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { authenticateAdmin } from '@/lib/admin-auth'
+import { authenticateAdmin } from '../../../../lib/admin-auth'
 import jwt from 'jsonwebtoken'
 
 export async function GET(request: NextRequest) {

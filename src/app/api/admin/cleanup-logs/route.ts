@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { withAdminAuth } from '@/lib/admin-auth'
-import { supabase } from '@/lib/supabase'
+import { withAdminAuth } from '../../../../lib/admin-auth'
+import { supabase } from '../../../../lib/supabase'
 
 export const POST = withAdminAuth(async (request: NextRequest) => {
   try {

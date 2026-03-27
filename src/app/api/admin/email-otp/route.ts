@@ -1,9 +1,9 @@
 // Email OTP delivery using Resend API with enhanced security
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
-import { EmailOTP, OTPSession } from '@/lib/emailOTP'
-import { validateAdminCredentials } from '@/lib/admin-auth'
-import { SecurityLogger } from '@/lib/security-logger'
+import { EmailOTP, OTPSession } from '../../../../lib/emailOTP'
+import { validateAdminCredentials } from '../../../../lib/admin-auth'
+import { SecurityLogger } from '../../../../lib/security-logger'
 import crypto from 'crypto'
 
 let resend: Resend | null = null

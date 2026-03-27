@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { SecurityLogger, SecurityEventType } from '@/lib/security-logger'
+import { SecurityLogger, SecurityEventType } from '../../../../lib/security-logger'
 import { 
   verify_supabase_webhook, 
   validate_and_sanitize_event, 

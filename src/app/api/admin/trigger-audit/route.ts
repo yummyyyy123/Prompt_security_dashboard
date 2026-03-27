@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { withAdminAuth } from '@/lib/admin-auth'
+import { withAdminAuth } from '../../../../lib/admin-auth'
 
 export const POST = withAdminAuth(async (request: NextRequest) => {
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN

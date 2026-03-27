@@ -3,7 +3,7 @@
 
 import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { checkAuthStatus } from '@/lib/auth-simple'
+import { checkAuthStatus } from '../lib/auth-simple'
 
 export default function AdminAuthCheck() {
   const router = useRouter()
