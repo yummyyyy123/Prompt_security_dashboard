@@ -1,8 +1,8 @@
 // Fix 2FA - Always require OTP for admin login
 import { NextRequest, NextResponse } from 'next/server'
 import jwt from 'jsonwebtoken'
-import { EmailOTP, OTPSession } from '../../../lib/emailOTP'
-import { SecurityLogger } from '../../../lib/security-logger'
+import { EmailOTP, OTPSession } from '../../../../lib/emailOTP'
+import { SecurityLogger } from '../../../../lib/security-logger'
 import crypto from 'crypto'
 
 function identityFp(value: string): string {

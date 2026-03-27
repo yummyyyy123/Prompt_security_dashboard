@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { withAdminAuth } from '@/lib/admin-auth'
-import { supabase } from '@/lib/supabase'
+import { withAdminAuth } from '../../../../lib/admin-auth'
+import { supabase } from '../../../../lib/supabase'
 
 // POST: Block IP for 1 day (no reason required)
 async function handler(request: NextRequest) {
