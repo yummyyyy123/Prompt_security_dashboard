@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { Shield, Bug, FlaskConical, LayoutDashboard, LogOut } from 'lucide-react'
 import { logout } from '@/lib/auth-simple'
+import '../globals.css'
 
 const navItems = [
     { href: '/admin', label: 'Dashboard', icon: LayoutDashboard, exact: true },
