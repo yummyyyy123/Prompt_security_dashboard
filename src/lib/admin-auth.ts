@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import jwt from 'jsonwebtoken'
 import bcrypt from 'bcryptjs'
 import { SecurityLogger } from './security-logger'
-import { detectVulnerabilityScanner, identifyScannerType, detectWafAttack } from '@/middleware-functions'
+import { detectVulnerabilityScanner, identifyScannerType, detectWafAttack } from '../middleware-functions'
 
 // Admin credentials — required environment variables (no defaults allowed)
 // Enhanced environment variable validation

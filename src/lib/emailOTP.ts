@@ -133,7 +133,7 @@ export class EmailOTP {
     const now = Date.now()
     const expiredKeys: string[] = []
     
-    for (const [email, data] of this.otpStore.entries()) {
+    for (const [email, data] of Array.from(this.otpStore.entries())) {
       if (now - data.timestamp > 5 * 60 * 1000) { // 5 minutes
         expiredKeys.push(email)
       }

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { validateAdminCredentials, generateAdminToken } from '../../../../../lib/admin-auth'
-import { SecurityLogger } from '../../../../../lib/security-logger'
+import { validateAdminCredentials, generateAdminToken } from '../../../lib/admin-auth'
+import { SecurityLogger } from '../../../lib/security-logger'
 import crypto from 'crypto'
 
 function identityFp(value: string): string {
