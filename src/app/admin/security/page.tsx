@@ -17,7 +17,7 @@ import {
     Copy
 } from 'lucide-react'
 
-import GitHubSecurityDashboard from '@/components/GitHubSecurityDashboard'
+import GitHubSecurityDashboard from '../../../components/GitHubSecurityDashboard'
 
 // Force dynamic rendering to prevent build-time prerender errors with env vars
 export const dynamic = 'force-dynamic'
